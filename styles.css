@@ -65,5 +65,101 @@ body {
 }
 
 .main {
-    background-color: gray;
+    background-color: #cbd5e1;
+}
+
+/* Header pard */
+
+header {
+    padding: 20px 48px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    align-items: center;
+    gap: 22px;
+    z-index: 1;
+    box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.12)
+}
+
+.search {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.search label,
+.header img {
+    height: 22px;
+    cursor: pointer;
+}
+
+.search input {
+    height: 100%;
+    border-radius: 16px;
+    border: none;
+    background-color: #cbd5e1;
+    outline: none;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.profile-pic {
+    height: 48px;
+
+}
+
+.bell {
+    padding-right: 12px;
+    justify-self: end;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    height: 100%;
+}
+
+.bigger-profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.bigger-profile .profile-pic {
+    height: 64px;
+}
+
+.bigger-profile .message {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+
+.message span:nth-child(2) {
+    font-size: 1.4rem;
+}
+
+.some-buttons {
+    display: grid;
+    gap: 18px;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, minmax(74px, 120px));
+}
+
+.some-buttons button {
+    color: white;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    background-color: #0ea5e9;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 0px;
 }
