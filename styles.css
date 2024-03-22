@@ -5,6 +5,17 @@
 
 :root {
     --dashboard-size: 18px;
+    --main-size: 1rem;
+    --icon-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -162,4 +173,63 @@ header {
     border-radius: 20px;
     border: none;
     padding: 10px 0px;
+}
+
+/* part of the main */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+.card {
+    background-color: white;
+    height: 220px;
+    display: flex;
+    border-radius: 8%;
+    overflow: hidden;
+}
+
+.card .yellow {
+    width: 8px;
+    background-color: #fbbf24;
+}
+
+.card .content {
+    flex: 1;
+    padding: 34px 22px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card .content .icons {
+    align-self: flex-end;
+    display: flex;
+    gap: 24px;
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.text span:nth-child(1) {
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+.text span:nth-child(2) {
+    color: #475569;
+}
+
+.card .icons img {
+    height: 22px;
+    cursor: pointer;
+    filter: invert(0.2);
+}
+
+.card .icons img:hover {
+    filter: invert(0);
 }
